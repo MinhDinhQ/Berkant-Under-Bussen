@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aflevering 2</title>
+</head>
+<body>
+
+
+    </div>
+    <h1>Top 5 albums</h1>
+    <div class="container">
+        <div class="box">
+            <h2>Stick Season</h2>
+            <p> 14 Sange</p>
+            <p>55 min.</p>
+            <p>Realese date 14. Oktober 2022</p>
+            <p><i>Kunstner: Noah Kahan</i></p>
+        </div>
+        <div class="box">
+            <h2>Channel Orange</h2>
+            <p>17 Sange</p>
+            <p>55 min.</p>
+            <p>Realese date 10. Juli 2012</p>
+            <p><i>Kunstner: Frank Ocean</i></p>
+        </div>
+        <div class="box">
+            <h2>Noeasy</h2>
+            <p>14 Sange</p>
+            <p>46 min.</p>
+            <p>Realese date 23. August 2021</p>
+            <p><i>Kunstner: StrayKids</i></p>
+        </div>
+        <div class="box">
+            <h2>D-day</h2>
+            <p>10 Sange</p>
+            <p> 32 min.</p>
+            <p>Realese date 21. April 2023</p>
+            <p><i>Kunster: August D</i></p>
+        </div>
+        <div class="box">
+            <h2>The Highlights (deluxe)</h2>
+            <p>36 Sange</p>
+            <p>2 t. 30 min.</p>
+            <p> Realese date 9. Februar 2024</p>
+            <p><i>Kunstner: The Weeknd</i></p>
+        </div>
+    </div>
+
+
+    <div id="slideshow-container">
+        <div class="mySlides">
+            <img src="Channel_ORANGE.jpeg" alt="Slide 1" width="auto" height="auto">
+        </div>
+    
+        <div class="mySlides">
+            <img src="stick season.png" alt="Slide 2" width="auto" height="auto">
+        </div>
+    
+        <div class="mySlides">
+            <img src="noeasy.jpeg" alt="Slide 3" width="auto" height="auto">
+        </div>
+        
+        <div class="mySlides">
+            <img src="D-day.jpeg" alt="Slide 4" width="auto" height="auto">
+        </div>
+
+        <div class="mySlides">
+            <img src="the highlights.png" alt="slidt 5" width="auto" height="auto">
+        </div>
+    </div>
+    
+    
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { 
+            slideIndex = 1;
+        }    
+        slides[slideIndex - 1].style.display = "block";  
+        setTimeout(showSlides, 1000); 
+    }
+
+let box = document.getElementById ("box").style.color ="red";
+
+
+    
+</script>
+
+</body>
+</html>
